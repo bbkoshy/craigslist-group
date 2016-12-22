@@ -1,0 +1,136 @@
+
+.search-holder {
+  text-align: center;
+    clear: both;
+    padding-top: 20px;
+}
+
+
+    #search-mobile {
+
+      .main-search-bar{
+        width: 300px;
+        margin: 0 auto;
+
+
+      .search-field {
+        border-right:none;
+      }
+      .search-icon {
+        float: right;
+      }
+
+    }
+}
+
+.searchbar-big {
+  border: 1px solid #eee;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: white;
+
+
+
+}
+#searchbar-small {
+  border: 1px solid #eee;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: white;
+
+  margin: 0 auto;
+
+
+
+}
+
+.main-search-bar {
+  width: 490px;
+  height: 40px;
+  background-color: white;
+  border-radius: 20px;
+
+
+  .search-field {
+    float: left;
+    color: #333;
+    height: 40px;
+    width: 200px;
+    display: inline;
+    padding: 5px 40px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    border-right: 1px solid #eee;
+
+  }
+  .search-field:focus {
+    outline: none;
+  }
+
+  ul {
+    list-style: none;
+    float: left;
+        height: 40px;
+        padding: 0px;
+        margin: 0px;
+
+  }
+  li {
+    display: inline-block;
+    padding: 8px;
+    border-right: 1px solid #eeeeee;
+    text-align: center;
+    height: 40px;
+      color: #333;
+      width: 120px;
+      .fa {
+        font-size: 20px;
+        margin-left: 5px;
+        position: relative;
+        top: 2px;
+        color: #9f9ea3
+      }
+  }
+  .search-icon {
+    float: left;
+    display: inline-block;
+    margin-right: 3px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 6px;
+    color: #402a72;
+    .fa{
+        font-size: 20px;
+    }
+  }
+  .drop-nav {
+    position: absolute;
+    display: none;
+    transition: display .5s;
+    width: 100%;
+    z-index: 4;
+
+  }
+    li {
+      background-color: white;
+      padding: 10px 0px;
+
+
+    }
+    .dropdown:hover .drop-nav {
+  display: block;
+a {
+  color: #333;
+}
+
+}
+}
+a {
+color: #402a72;
+}
+a:hover {
+  color: #016e90;
+}

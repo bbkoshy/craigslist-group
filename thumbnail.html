@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Craigslist/category/grid</title>
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <link href="stylesheets/main.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+<!-- header bellow here, css styling is in partial called 'header' -->
+
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="logo" />
+      </div>
+        <!-- this is the searchbar for full desktopviewing, css styling is in partial called 'searchbar' -->
+
+      <div class="searchbar-big">
+      <div class="main-search-bar">
+        <form>
+          <input class="search-field" placeholder="SEARCH" type="text">
+        </form>
+        <ul>
+          <li class="dropdown"> CATEGORY <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul class="drop-nav">
+                 <li><a href="#"> FOR SALE </a></li>
+                 <li><a href="#"> HOUSING </a></li>
+                 <li><a href="#"> COMMUNITY </a></li>
+                 <li><a href="#">  PERSONALS </a></li>
+                 <li><a href="#"> JOBS </a></li>
+                  <li><a href="#"> GIGS </a></li>
+                  <li><a href="#"> SERVICES</a></li>
+                  <li><a href="#"> RESUMES</a></li>
+                </ul>
+          </li>
+          <li class="dropdown"> LOCATION <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul class="drop-nav">
+                 <li><a href="#"> AUSTIN </a></li>
+                 <li><a href="#"> DALLAS </a></li>
+                 <li><a href="#"> HOUSTON </a></li>
+                  <li><a href="#">  WACO </a></li>
+                  <li><a href="#"> SAN MARCOS </a></li>
+                  <li><a href="#"> SAN ANTONIO </a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="search-icon"> <a href="#">
+          <i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      </div>
+
+
+      <!-- this is the "post" icon and the "my account" icon -->
+        <div class="post-and-profile">
+         <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+
+     <!-- these are the two other searchbars. one for smallest screens and one for mid size -->
+        <div class="search-holder">
+          <!-- this is the smallest searchbar -->
+          <div id="search-mobile" class="searchbar-small">
+          <div class="main-search-bar">
+            <form>
+              <input class="search-field" placeholder="SEARCH" type="text">
+            </form>
+            <div class="search-icon"> <a href="#">
+              <i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          </div>
+          <!-- this is the mid sized searchbar -->
+        <div id="searchbar-small">
+        <div class="main-search-bar">
+          <form>
+           <input class="search-field" placeholder="SEARCH" type="text">
+          </form>
+          <ul>
+            <li class="dropdown"> CATEGORY <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <ul class="drop-nav">
+                   <li><a href="#"> FOR SALE </a></li>
+                   <li><a href="#"> HOUSING </a></li>
+                   <li><a href="#"> COMMUNITY </a></li>
+                    <li><a href="#">  PERSONALS </a></li>
+                    <li><a href="#"> JOBS </a></li>
+                    <li><a href="#"> GIGS </a></li>
+                    <li><a href="#"> SERVICES</a></li>
+                    <li><a href="#"> RESUMES</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown"> LOCATION <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <ul class="drop-nav">
+                   <li><a href="#"> AUSTIN </a></li>
+                   <li><a href="#"> DALLAS </a></li>
+                   <li><a href="#"> HOUSTON </a></li>
+                    <li><a href="#">  WACO </a></li>
+                    <li><a href="#"> SAN MARCOS </a></li>
+                    <li><a href="#"> SAN ANTONIO </a></li>
+                  </ul></li>
+          </ul>
+          <div class="search-icon"> <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+      </div>
+     </div>
+</div>
+        </header>
+<!-- this is the breadcrum section -->
+    <div class="breadcrum">
+      <ul>
+        <a href="#"><li>AUSTIN  <i class="fa fa-angle-right" aria-hidden="true"> </i>
+        </li></a>
+        <a href="#"><li>FOR SALE <i class="fa fa-angle-right" aria-hidden="true"> </i> </li></a>
+        <a href="#"><li> CARS </li></a>
+      </ul>
+    </div>
+
+<div class="page-view">
+    <div class="view-choice">
+      <div class="list">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+     <div class="thumb">
+       <i class="fa fa-th-list" aria-hidden="true"></i>
+     </div>
+    <div class="grid">
+      <i class="fa fa-th-large" aria-hidden="true"></i>
+    </div>
+    </div>
+<div class="page-nav">
+  <div class="previous">
+    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+  </div>
+   <div class="one-of">
+     <p> 1 of 12 </p>
+   </div>
+   <div class="next">
+<i class="fa fa-chevron-right" aria-hidden="true"></i>
+   </div>
+</div>
+  <div class="sort">
+    <div class="view">
+    <p> NEWEST </p>
+    </div>
+    <div class="arrow">
+<i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+<!-- tate's stuff -->
+<section class="sidebar-items">
+<div class="sidebarcontainer">
+        <div class="listcontainerone">
+        <h2>Category</h2>
+          <hr>
+        <ul class="category">
+          <li> <input type="checkbox" name="check-box" /> <span>Antiques</span></li>
+          <li> <input type="checkbox" name="check-box" /> <span>Baby & Kid Stuff</span></li>
+          <li> <input type="checkbox" name="check-box" /> <span>Cars & Trucks</span></li>
+          <li> <input type="checkbox" name="check-box" /> <span>Electronics</span></li>
+          <li> <input type="checkbox" name="check-box" /> <span>Free Stuff</span></li>
+          <li> <input type="checkbox" name="check-box" /> <span>General For Sale</span></li>
+        </ul>
+      </div>
+      <div class="listcontainertwo">
+        <h2>Filter</h2>
+          <hr>
+        <ul class="whooption">
+          <li class="target"><div class="buttonone"><a href="#target1" id="target1">All</a></div></li>
+          <li class="target"><div class="buttonmiddle"><a href="#target2" id="target2">Owner</a></div></li>
+          <li class="target"><div class="buttonthird"><a href="#target3" id="target3">Dealer</a></div></li>
+        </ul>
+        <br>
+        <ul class="filter">
+          <li><input type="checkbox" name="check-box"/> <span>Search Titles Only</span></li>
+          <li><input type="checkbox" name="check-box"/> <span>Has Images</span></li>
+          <li><input type="checkbox" name="check-box"/> <span>Posted Today</span></li>
+          <li><input type="checkbox" name="check-box"/> <span>Bundle Duplicates</span></li>
+          <li><input type="checkbox" name="check-box"/> <span>Include Nearby Areas</span></li>
+        </ul>
+        <form class="priceform">
+          <h2>Price</h2>
+          <input placeholder="MIN" type="text" id="min" name="min"/>
+          <input placeholder="MAX" type="max" id="max" name="max"/>
+        </form>
+      </div>
+      </div>
+      <div class="all-thumbnail-items">
+        <div class="thumbnail-list-item">
+          <div class="thumbnail-img">
+            <img src="images/bluetable.jpg">
+            </div>
+          <div class="thumbnail-text">
+            <div class="description">
+            <h1>Coffee Table with Blue Trim</h1>
+            <h2>South Austin</h2>
+          </div>
+            <div class="user-img"><img src="images/user-5.jpeg"></div>
+            <div class="ratingstars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          </div>
+          <div class="thumbnail-price">
+            <h1>$70</h1>
+            <h2>Dec 15</h2>
+            </div>
+            <hr>
+            </div>
+      <div>
+        <div class="thumbnail-list-item">
+          <div class="thumbnail-img">
+            <img src="images/table.jpg">
+            </div>
+          <div class="thumbnail-text">
+            <div class="description">
+            <h1>Wood Table with Matching Chairs</h1>
+            <h2>South Austin</h2>
+          </div>
+            <div class="user-img"><img src="images/user-6.jpg"></div>
+            <div class="ratingstars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          </div>
+          <div class="thumbnail-price">
+            <h1>$200</h1>
+            <h2>Dec 15</h2>
+            </div>
+            <hr>
+              </div>
+            </div>
+        <div class="thumbnail-list-item">
+          <div class="thumbnail-img">
+            <img src="images/bluetable.jpg">
+            </div>
+          <div class="thumbnail-text">
+            <div class="description">
+            <h1>Coffee Table with Blue Trim</h1>
+            <h2>South Austin</h2>
+          </div>
+            <div class="user-img"><img src="images/user-5.jpeg"></div>
+            <div class="ratingstars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          </div>
+          <div class="thumbnail-price">
+            <h1>$70</h1>
+            <h2>Dec 15</h2>
+          </div>
+          <hr>
+                </div>
+        <div class="thumbnail-list-item">
+          <div class="thumbnail-img">
+            <img src="images/table.jpg">
+            </div>
+          <div class="thumbnail-text">
+            <div class="description">
+            <h1>Wood Table with Matching Chairs</h1>
+            <h2>South Austin</h2>
+          </div>
+            <div class="user-img"><img src="images/user-6.jpg"></div>
+            <div class="ratingstars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          </div>
+          <div class="thumbnail-price">
+            <h1>$200</h1>
+            <h2>Dec 15</h2>
+            </div>
+            <hr>
+        </div>
+        <div class="thumbnail-list-item">
+          <div class="thumbnail-img">
+            <img src="images/bluetable.jpg">
+            </div>
+          <div class="thumbnail-text">
+            <div class="description">
+            <h1>Coffee Table with Blue Trim</h1>
+            <h2>South Austin</h2>
+          </div>
+            <div class="user-img"><img src="images/user-5.jpeg"></div>
+            <div class="ratingstars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          </div>
+          <div class="thumbnail-price">
+            <h1>$70</h1>
+            <h2>Dec 15</h2>
+            </div>
+            <hr>
+              </div>
+        <div class="thumbnail-list-item">
+          <div class="thumbnail-img">
+            <img src="images/table.jpg">
+            </div>
+          <div class="thumbnail-text">
+            <div class="description">
+            <h1>Wood Table with Matching Chairs</h1>
+            <h2>South Austin</h2>
+          </div>
+            <div class="user-img"><img src="images/user-6.jpg"></div>
+            <div class="ratingstars">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+          </div>
+          </div>
+        </div>
+          <div class="thumbnail-price">
+            <h1>$200</h1>
+            <h2>Dec 15</h2>
+            </div>
+            <hr>
+        </div>
+        <div class="bottom">
+          <div class="page-nav">
+            <div class="previous">
+              <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </div>
+             <div class="one-of">
+               <p> 1 of 12 </p>
+             </div>
+             <div class="next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+             </div>
+        </div>
+      </div>
+</section>
+    <footer>
+      <ul class="list">
+            <li><a href="#">Help, Faq, abuse, legal</a></li>
+            <li><a href="#">avoid scams & fraud</a></li>
+            <li><a href="#">personal safety tips</a></li>
+            <li><a href="#">terms of use</a></li>
+            <li><a href="#">privacy policy</a></li></ul>
+            <ul class="list">
+            <li><a href="#">system status</a></li>
+            <li><a href="#">about craigslist</a></li>
+            <li><a href="#">craigslist is hiring in sf</a></li>
+            <li><a href="#">craigslist open source</a></li>
+            <li><a href="#">craigslist blog</a></li>
+          </ul>
+          <ul class="list">
+            <li><a href="#">best-of-craigslist</a></li>
+            <li><a href="#">craigslist tv</a></li>
+            <li><a href="#">"craigslist joe"</a></li>
+            <li><a href="#">craig connects</a></li>
+          </ul>
+          <img src="images/craigslistlogo.png" alt="">
+      <!-- Latest compiled and minified JavaScript -->
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+           <script type="text/javascript" src="js/main.js"></script>
+         </footer>
+  </body>
+</html>

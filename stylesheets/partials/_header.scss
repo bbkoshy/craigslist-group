@@ -1,0 +1,29 @@
+@import "colors";
+
+header {
+  height: 100px;
+background-color: $purple;
+text-align: center;
+padding: 27px 20px;
+ .logo {
+   float: left;
+   img {
+     width:  175px;
+   }
+ }
+ .post-and-profile {
+   width: 175px;
+   float: right;
+   .fa {
+     color: white;
+     font-size: 40px;
+     margin-left: 20px;
+   }
+   .fa-plus-circle {
+    font-size: 46px;
+    position: relative;
+    top: 2px;
+
+   }
+ }
+}

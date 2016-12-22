@@ -1,0 +1,69 @@
+@mixin footer-styling{
+    background-color: #9f9ea3;
+    overflow: hidden;
+    height: 240px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    position: relative;
+
+
+  ul{
+    list-style: none;
+    padding-left: 15px;
+    padding-top: 10px;
+
+  }
+
+  li{
+    padding: 8px;
+  }
+
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+  }
+  a:hover{
+    color: #016E90;
+    text-decoration: none;
+  }
+
+  .list { float: left;
+    margin-top: 10px;
+  }
+
+  img{
+
+    width: 180px;
+  position: absolute;
+  top: 160px;
+  right: 40px;
+  }
+
+
+
+}
+
+footer{
+  @include footer-styling;
+}
+
+
+
+// @mixin icon-styling{
+//   @include span-columns (6 of 12);
+//   margin-left: 60px;
+//   text-align: left;
+//   font-size: 20px;
+//   background-color: #eeeeee;
+//   border: 2px;
+//   border-radius: 6px;
+//   padding: 10px;
+//   margin-bottom: 16px;
+//
+//
+// }
+
+.fa.fa-share-alt, .fa.fa-phone,{
+  // @include icon-styling;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Craigslist/category/grid</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link href="stylesheets/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo" />
+    </div>
+      <!-- this is the searchbar for full desktopviewing, css styling is in partial called 'searchbar' -->
+
+    <div class="searchbar-big">
+    <div class="main-search-bar">
+      <form>
+        <input class="search-field" placeholder="SEARCH" type="text">
+      </form>
+      <ul>
+        <li class="dropdown"> CATEGORY <i class="fa fa-caret-down" aria-hidden="true"></i>
+          <ul class="drop-nav">
+               <li><a href="#"> FOR SALE </a></li>
+               <li><a href="#"> HOUSING </a></li>
+               <li><a href="#"> COMMUNITY </a></li>
+               <li><a href="#">  PERSONALS </a></li>
+               <li><a href="#"> JOBS </a></li>
+                <li><a href="#"> GIGS </a></li>
+                <li><a href="#"> SERVICES</a></li>
+                <li><a href="#"> RESUMES</a></li>
+              </ul>
+        </li>
+        <li class="dropdown"> LOCATION <i class="fa fa-caret-down" aria-hidden="true"></i>
+          <ul class="drop-nav">
+               <li><a href="#"> AUSTIN </a></li>
+               <li><a href="#"> DALLAS </a></li>
+               <li><a href="#"> HOUSTON </a></li>
+                <li><a href="#">  WACO </a></li>
+                <li><a href="#"> SAN MARCOS </a></li>
+                <li><a href="#"> SAN ANTONIO </a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="search-icon"> <a href="#">
+        <i class="fa fa-search" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- this is the "post" icon and the "my account" icon -->
+      <div class="post-and-profile">
+       <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </div>
+
+   <!-- these are the two other searchbars. one for smallest screens and one for mid size -->
+      <div class="search-holder">
+        <!-- this is the smallest searchbar -->
+        <div id="search-mobile" class="searchbar-small">
+        <div class="main-search-bar">
+          <form>
+            <input class="search-field" placeholder="SEARCH" type="text">
+          </form>
+          <div class="search-icon"> <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        </div>
+        <!-- this is the mid sized searchbar -->
+      <div id="searchbar-small">
+      <div class="main-search-bar">
+        <form>
+         <input class="search-field" placeholder="SEARCH" type="text">
+        </form>
+        <ul>
+          <li class="dropdown"> CATEGORY <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul class="drop-nav">
+                 <li><a href="#"> FOR SALE </a></li>
+                 <li><a href="#"> HOUSING </a></li>
+                 <li><a href="#"> COMMUNITY </a></li>
+                  <li><a href="#">  PERSONALS </a></li>
+                  <li><a href="#"> JOBS </a></li>
+                  <li><a href="#"> GIGS </a></li>
+                  <li><a href="#"> SERVICES</a></li>
+                  <li><a href="#"> RESUMES</a></li>
+                </ul>
+          </li>
+          <li class="dropdown"> LOCATION <i class="fa fa-caret-down" aria-hidden="true"></i>
+            <ul class="drop-nav">
+                 <li><a href="#"> AUSTIN </a></li>
+                 <li><a href="#"> DALLAS </a></li>
+                 <li><a href="#"> HOUSTON </a></li>
+                  <li><a href="#">  WACO </a></li>
+                  <li><a href="#"> SAN MARCOS </a></li>
+                  <li><a href="#"> SAN ANTONIO </a></li>
+                </ul></li>
+        </ul>
+        <div class="search-icon"> <a href="#">
+          <i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+    </div>
+   </div>
+</div>
+      </header>
+<!-- this is the breadcrum section -->
+  <div class="breadcrum">
+    <ul>
+      <a href="#"><li>AUSTIN  <i class="fa fa-angle-right" aria-hidden="true"> </i>
+      </li></a>
+      <a href="#"><li>FOR SALE <i class="fa fa-angle-right" aria-hidden="true"> </i> </li></a>
+      <a href="#"><li> CARS </li></a>
+    </ul>
+  </div>
+
+    <section class="itemlisting">
+        <section class="listing">
+          <div class="item-header">
+            <div class="title-owner">
+                <h1>friendly tiny mini piglets</h1>
+                <h2>tom selleck</h2>
+            </div>
+            <div class="price-date">
+                <h1>$225</h1>
+                <h2>DEC 15</h2>
+                  </div>
+            </div>
+            <div class="pictures">
+              <div class="mainpicture">
+                <img src="images/mainpig.png" alt="">
+                </div>
+                <div class="bottompictures">
+
+                <div class="picture-1">
+
+                </div>
+                <div class="picture-2">
+                </div>
+                <div class="picture-3">
+                </div>
+                <div class="picture-4">
+
+                </div>
+                </div>
+            </div>
+            <div class="textbox">
+                <p>I have several mini piglets available. Colors are black and     dark silver. I have only males left. Price is $265 for the silvers and $225 for the blacks.These piglets are litterbox trained and living inside. They are all being daily socialized
+                and exposed to children and other pets. These piglets should grow up between 30-60 pounds. Their father is a very small Juliana pig, weighing about 30 pounds, and their mothers are very small Potbelly pigs, weighing around 50-60 pounds--and
+                the parents can be seen onsite. I also included pictures of the parents at the end of the post. Please call or text show contact info if you're interested. Tags: Piglet Miniature Pixie Nano Micro Mini Teacup Mini Pig Juliana Potbelly
+                Pot belly Pot-bellied Pig</p>
+
+            </div>
+        </section>
+        <section class="map">
+          <div class="button-container">
+            <div class="button"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><h2>Contact seller</h2></a>
+            </div>
+            <div class="button"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i><h2>share</h2></a>
+
+            </div>
+
+          </div>
+
+          <img src="images/map.png" alt="">
+          <h3>Seguin, tx</h3>
+        </section>
+
+
+
+    </section>
+
+    <footer>
+        <ul class="list">
+            <li><a href="#">Help, Faq, abuse, legal</a></li>
+            <li><a href="#">avoid scams & fraud</a></li>
+            <li><a href="#">personal safety tips</a></li>
+            <li><a href="#">terms of use</a></li>
+            <li><a href="#">privacy policy</a></li>
+        </ul>
+        <ul class="list">
+            <li><a href="#">system status</a></li>
+            <li><a href="#">about craigslist</a></li>
+            <li><a href="#">craigslist is hiring in sf</a></li>
+            <li><a href="#">craigslist open source</a></li>
+            <li><a href="#">craigslist blog</a></li>
+        </ul>
+        <ul class="list">
+            <li><a href="#">best-of-craigslist</a></li>
+            <li><a href="#">craigslist tv</a></li>
+            <li><a href="#">"craigslist joe"</a></li>
+            <li><a href="#">craig connects</a></li>
+        </ul>
+        <img src="images/craigslistlogo.png" alt="">
+
+        <!-- Latest compiled and minified JavaScript -->
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </footer>
+</body>
+
+</html>

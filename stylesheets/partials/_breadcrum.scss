@@ -1,0 +1,24 @@
+.breadcrum {
+  border-bottom: 1px solid $bordergrey;
+  overflow: hidden;
+ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0px;
+  a{
+    color: $purple;
+  }
+
+  li {
+    font-size: 15px;
+    display: inline-block;
+    float: left;
+    padding: 10px 0px;
+  }
+  .fa {
+    color: #333;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+}
